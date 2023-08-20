@@ -1,0 +1,469 @@
+                                    /* General */
+                                    
+                                    * {
+                                        box-sizing: border-box;
+                                    }
+                                    
+                                    body {
+                                        background-color: #F5F5F5;
+                                    }
+                                    
+                                    ul {
+                                        list-style: none;
+                                    }
+                                    a {text-decoration: none;}
+                                    /* ul li:not(:last-child) {
+                                        margin-bottom: 2rem;
+                                    } */
+                                    
+                                     :root {
+                                        --sec-padding: 100px 125px;
+                                        --primary-color: #0078ff;
+                                    }
+                                    
+                                    .header-underline {
+                                        position: relative;
+                                        font-size: 3rem;
+                                    }
+                                    
+                                    .underline {
+                                        width: 40px;
+                                        height: 5px;
+                                        margin: auto;
+                                        background-color: #0078ff;
+                                    }
+                                    /* Fixed Btn */
+                                    .fixed-btn a{
+                                        position: fixed;
+                                        right: 20px;
+                                        bottom: 140px;
+                                        z-index: 3;
+                                        width: 40px;
+                                        height: 40px;
+                                        background-color: #0078ff;
+                                        border-radius: 50%;
+                                        color: #fff;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                               
+                                  
+                                    /* NAv Bar */
+
+                                    .nav-link
+                                    {
+                                        position: relative;   
+                                        padding-left: 0 !important;
+                                        padding-right: 15px !important;
+                                    }
+
+                                    .nav-link::before{
+                                            content: '';
+                                            position: absolute;
+                                            top: 100%;
+                                            left: 0;
+                                            width: 0;
+                                            height: 3px;
+                                            transition: all 0.5s;
+                                        }
+                                        .nav-link.active::before {
+                                            width: 40px;
+                                         }
+                                    /* Home */
+                                    
+                                    #home {
+                                        background-image: url(../images/intro-bg.jpg);
+                                        background-size: cover;
+                                        background-attachment: fixed;
+                                        height: 100vh;
+                                        position: relative;
+                                        z-index: 4;
+                                    }
+                                    
+                                    .overlay {
+                                        background-color: rgba(0, 0, 0, 0.7);
+                                        height: 100%;
+                                    }
+                                    
+                                    .home-content {
+                                        color: #fff;
+                                        display: flex;
+                                        flex-flow: column nowrap;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 100%;
+                                    }
+                                    
+                                    .home-content h2 {
+                                        font-size: 28px;
+                                        font-weight: 500;
+                                    }
+                                    
+                                    .home-content h1 {
+                                        font-size: 4rem;
+                                        font-weight: 600;
+                                    }
+                                    
+                                    .home-content h2::after {
+                                        content: '';
+                                        animation: text 5s alternate infinite;
+                                    }
+                                    
+                                    @keyframes text {
+                                        0% {
+                                            content: '|'
+                                        }
+                                        5% {
+                                            content: 'CEO |'
+                                        }
+                                        10% {
+                                            content: 'CEO Dev |'
+                                        }
+                                        15% {
+                                            content: 'CEO DevFolio |'
+                                        }
+                                        20% {
+                                            content: 'CEO Dev |'
+                                        }
+                                        25% {
+                                            content: 'CEO |'
+                                        }
+                                        30% {
+                                            content: '|'
+                                        }
+                                        35% {
+                                            content: 'Web |'
+                                        }
+                                        40% {
+                                            content: 'Web Dev |'
+                                        }
+                                        45% {
+                                            content: 'Web Devloper |'
+                                        }
+                                        50% {
+                                            content: 'Web Dev |'
+                                        }
+                                        55% {
+                                            content: 'Web Designer |'
+                                        }
+                                        60% {
+                                            content: 'Web |'
+                                        }
+                                        65% {
+                                            content: '|'
+                                        }
+                                        70% {
+                                            content: 'Frontend |'
+                                        }
+                                        75% {
+                                            content: 'Frontend Developer |'
+                                        }
+                                        80% {
+                                            content: 'Frontend  |'
+                                        }
+                                        85% {
+                                            content: '|'
+                                        }
+                                        90% {
+                                            content: 'Graphic |'
+                                        }
+                                        100% {
+                                            content: 'Graphic Designer |'
+                                        }
+                                    }
+                                    /* About */
+                                    
+                                    #about {
+                                        padding-block: var(--sec-padding);
+                                    }
+                                    
+                                    .about-card {
+                                        background-color: #fff;
+                                        padding: 3rem 1.25rem;
+                                    }
+                                    
+                                    .img-container img {
+                                        margin-left: 10px;
+                                        margin-bottom: 2rem;
+                                    }
+                                    
+                                    .side-title {
+                                        margin-bottom: 3rem;
+                                    }
+                                    
+                                    .title-underline {
+                                        position: relative;
+                                        font-size: 3rem;
+                                    }
+                                    
+                                    .title-underline:before {
+                                        content: '';
+                                        position: absolute;
+                                        height: 3px;
+                                        background-color: #0078ff;
+                                        width: 100px;
+                                        bottom: -12px;
+                                    }
+                                    
+                                    .skill-item {
+                                        margin-bottom: 2rem;
+                                    }
+                                    
+                                    .progress {
+                                        background-color: #CDE1F8;
+                                    }
+                                    /* Services */
+                                    
+                                    .service-box {
+                                        background-color: #fff;
+                                        padding: 2.5rem 1.3rem;
+                                        border-radius: 1rem;
+                                        margin-bottom: 3rem;
+                                    }
+                                    
+                                    .service-icon {
+                                        width: 100px;
+                                        height: 100px;
+                                        border: 10px solid #0078ff;
+                                        border-radius: 50%;
+                                        color: #000;
+                                        margin: auto;
+                                        text-align: center;
+                                        font-size: 3rem;
+                                        margin-bottom: 1rem;
+                                        transition: all 0.5s;
+                                    }
+                                    
+                                    .service-icon:hover {
+                                        border: 10px solid #CDE1F8;
+                                        border-radius: 50%;
+                                        color: #000;
+                                        color: #fff;
+                                        background-color: #0078ff;
+                                    }
+                                    
+                                    .service-content h3 {
+                                        font-size: 1.4rem;
+                                    }
+                                    /* Counter */
+                                    
+                                    #counter {
+                                        background-image: url(../images/counters-bg.jpg);
+                                        background-size: cover;
+                                        background-position: center center;
+                                        background-attachment: fixed;
+                                    }
+                                    
+                                 
+                                    
+                                    .counter-item {
+                                        color: #CDE1F8
+                                    }
+                                    
+                                    .icon-container {
+                                        border: 8px solid #CDE1F8;
+                                        border-radius: 50%;
+                                        width: 60px;
+                                        height: 60px;
+                                        text-align: center;
+                                        font-size: 2rem;
+                                        color: #fff;
+                                        margin: auto;
+                                    }
+                                    /* Work */
+                                    
+                                    #work {
+                                        padding-block: var(--sec-padding);
+                                    }
+                                    
+                                    .portfolio-card {
+                                        background-color: #fff;
+                                    }
+                                    
+                                    .img-div {
+                                        overflow: hidden;
+                                    }
+                                    
+                                    .img-div img {
+                                        filter: grayscale(100%);
+                                        transition: all 1s;
+                                    }
+                                    
+                                    .img-div img:hover {
+                                        filter: grayscale(0%);
+                                        transform: scale(1.5);
+                                    }
+                                    
+                                    .work-span {
+                                        color: var(--primary-color);
+                                    }
+                                    
+                                    .plus-icon {
+                                        border: 1px solid var(--primary-color);
+                                        background-color: #fff;
+                                        color: var(--primary-color);
+                                        border-radius: 50%;
+                                        text-align: center;
+                                        width: 40px;
+                                        height: 40px;
+                                        font-size: 1.5rem;
+                                    }
+                                    /* Carousl */
+                                    
+                                    #carouselSec {
+                                        background-image: url(../images/overlay-bg.jpg);
+                                        background-size: cover;
+                                        background-position: center center;
+                                        background-attachment: fixed;
+                                        position: relative;
+                                        padding: 8rem 0;
+                                        height: 60vh;
+                                    }
+                                    
+                                    .carouselSec-overlay {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0px;
+                                        padding: 0;
+                                        height: 100%;
+                                        width: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        background-color: rgba(0 120 255/0.7);
+                                    }
+                                    
+                                    .img-holder {
+                                        width: 100%;
+                                        height: 100px;
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                    
+                                    .img-holder img {
+                                        border-radius: 50%;
+                                    }
+                                    
+                                    .carousel-item {
+                                        height: 40vh;
+                                    }
+                                    /* .blog.carousel-item.img-holder,
+                                    .blog.carousel-item.carousel-caption {
+                                        transform: scale(0);
+                                        transition: all 1s;
+                                    } */
+                                    /* .blog .carousel-item.active .img-holder,
+                                    .blog .carousel-item.active .carousel-caption {
+                                        transform: scale(1);
+                                    } */
+                                    /* Blog */
+                                    
+                                    #blog {
+                                        padding-block: var(--sec-padding);
+                                    }
+                                    
+                                    .blog-card {
+                                        background-color: #fff;
+                                    }
+                                    
+                                    .category-div {
+                                        top: -20px;
+                                        left: -15px;
+                                        right: 15px;
+                                        overflow: hidden;
+                                    }
+                                    
+                                    .cat-box {
+                                        display: inline-block;
+                                        color: #fff;
+                                        padding: 5px 10px;
+                                        border-radius: 4px;
+                                    }
+                                    
+                                    .cat-name {
+                                        display: inline-block;
+                                        font-size: 1rem;
+                                        margin-bottom: 0;
+                                    }
+                                    
+                                    .card-title {
+                                        font-size: 1.3rem;
+                                    }
+                                    
+                                    .card-title a {
+                                        text-decoration: none;
+                                        color: #000;
+                                    }
+                                    
+                                    .card-title a:hover {
+                                        color: var(--primary-color);
+                                    }
+                                    
+                                    .card-footer {
+                                        background-color: #F7F7F7;
+                                        border-top: 1px solid #c2b7b7;
+                                    }
+                                    
+                                    /* .footer-img {
+                                        border-radius: 50%;
+                                        overflow: hidden;
+                                    } */
+                                    .footer-img img{
+                                    width: 30px;
+                                    height: 30px;
+                                    }
+                                    
+                                    .footer-name a {
+                                        text-decoration: none;
+                                        color: #000;
+                                        font-size: 0.9rem;
+                                    }
+                                    
+                                    .footer-name a:hover {
+                                        color: var(--primary-color);
+                                    }
+                                    /* Contact */
+                                    
+                                    #contact {
+                                        padding-block: var(--sec-padding);
+                                        background: url(../images/overlay-bg.jpg) center fixed no-repeat;
+                                        background-size: cover;
+                                  
+                                    }
+                                    
+                                    .contact-overlay {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0px;
+                                        padding: 0;
+                                        height: 100%;
+                                        width: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        background-color: rgba(0 120 255/0.7);
+                                    }
+
+                                   .social-icons li{
+                                        width: 50px;
+                                        height: 50px;
+                                        border: 2px solid var(--primary-color);
+                                        border-radius: 50%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    font-size: 1.4rem;
+                                        transition: all 1s;
+                                   }
+                                   .social-icons li:hover{
+                                  
+                                        border: 2px solid #CDE1F8;
+                                    
+                                   background-color: var(--primary-color);
+                                        color: #fff;
+                                   }
+
+                                   /* Footer */
+                                   #footer{
+                                    padding-block:20px;
+                                   }
+
